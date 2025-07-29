@@ -283,6 +283,15 @@ input[type="submit"]:hover {
     -webkit-backdrop-filter: blur(2px);
     padding: 20px;
     width: 90%;
+    .hero {
+  align-items: flex-start;
+  padding-top: 4vh;
+}
+
+.hero-inner {
+  margin-top: 0; /* Or even negative margin if needed */
+}
+
   }
 
   .hero-inner h2 {
