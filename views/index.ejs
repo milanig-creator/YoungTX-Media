@@ -1,0 +1,47 @@
+<%- include('partials/header') %>
+
+<section class="hero">
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="/videos/hero.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Foreground Content -->
+  <div class="hero-content">
+    <div class="hero-inner">
+      <img src="/images/Main Logo.png" alt="YTX Media Logo" />
+      <h2>Built to Break the Algorithm</h2>
+      <p class="tagline">Helping brands and creators grow through bold, impactful content.</p>
+      <a href="/contact" class="cta-btn">Request a Consultation</a>
+
+      <div class="hero-socials">
+        <a href="https://instagram.com/ytxmedia" target="_blank" class="social-icon instagram" title="Follow us on Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://tiktok.com/@ytxmedia" target="_blank" class="social-icon tiktok" title="Watch us on TikTok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://youtube.com/@ytxmedia" target="_blank" class="social-icon youtube" title="Subscribe on YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://facebook.com/ytxmedia" target="_blank" class="social-icon facebook" title="Connect on Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
+
+<script>
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const header = document.querySelector('header');
+      if (header) {
+        header.classList.add('visible');
+      }
+    }, 1800);
+  });
+</script>
