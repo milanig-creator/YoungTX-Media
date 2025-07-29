@@ -37,7 +37,6 @@ header h1 {
   letter-spacing: 2px;
 }
 
-
 header::after {
   content: "";
   position: absolute;
@@ -103,10 +102,9 @@ nav a:hover {
 .hero-inner {
   max-width: 700px;
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.2); /* reduced darkness */
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   animation: fadeSlideZoom 1.6s ease-out both;
 }
 
@@ -126,8 +124,9 @@ nav a:hover {
 .hero-inner p {
   max-width: 600px;
   margin: 0 auto 1.5rem;
-  color: #c9c9c9;
+  color: #f0f0f0;
   font-size: 1.1rem;
+  font-family: 'Dancing Script', cursive;
 }
 
 /* === CTA Button === */
@@ -238,15 +237,6 @@ input[type="submit"]:hover {
   animation-delay: 2.2s;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 1rem;
-  animation: fadeSlideZoom 1.6s ease-out both;
-  color: white;
-}
-
-
 .social-icon i {
   font-size: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -285,33 +275,22 @@ input[type="submit"]:hover {
   backdrop-filter: blur(4px);
 }
 
-.tagline {
-  font-family: 'Dancing Script', cursive;
-  font-size: 7.5rem;
-  color: #f0f0f0;
-  margin-top: 0.5rem;
-}
-
+/* === Responsive === */
 @media (max-width: 768px) {
   .hero-inner {
-    width: 90%;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     padding: 20px;
-    margin-top: 20px;
-  }
-
-  .hero-inner img {
-    max-width: 120px;
-    margin-bottom: 15px;
+    width: 90%;
   }
 
   .hero-inner h2 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
   }
 
   .hero-inner p {
     font-size: 1rem;
-    line-height: 1.4;
   }
 
   .cta-btn {
@@ -321,37 +300,6 @@ input[type="submit"]:hover {
 
   .hero-socials {
     margin-top: 15px;
-    display: flex;
-    justify-content: center;
     gap: 12px;
   }
-
-  .hero-content {
-    padding: 0 10px;
-  }
-
-  .hero-content {
-  background: none !important; /* Prevent unwanted overlays */
-  backdrop-filter: none !important;
-}
-
-.hero-inner {
-  background-color: rgba(255, 255, 255, 0.25) !important;
-  color: #fff;
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* soft glow */
-  backdrop-filter: blur(4px); /* optional: glass effect */
-}
-
-.hero-inner {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); /* for Safari */
-  border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-}
-
-
 }
