@@ -276,22 +276,25 @@ input[type="submit"]:hover {
 }
 
 /* === Responsive === */
+/* === Responsive === */
 @media (max-width: 768px) {
+  .hero {
+    align-items: flex-start;
+    padding-top: 0;
+  }
+
+  .hero-content {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
   .hero-inner {
     background: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     padding: 20px;
     width: 90%;
-    .hero {
-  align-items: flex-start;
-  padding-top: 0;
-}
-
-.hero-inner {
-  margin-top: -10; /* Or even negative margin if needed */
-}
-
+    margin-top: 0; /* Ensure no space from the top */
   }
 
   .hero-inner h2 {
@@ -312,3 +315,4 @@ input[type="submit"]:hover {
     gap: 12px;
   }
 }
+
