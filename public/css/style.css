@@ -285,7 +285,7 @@ input[type="submit"]:hover {
     width: 90%;
     .hero {
   align-items: flex-start;
-  padding-top: 4vh;
+  padding-top: 0;
 }
 
 .hero-inner {
