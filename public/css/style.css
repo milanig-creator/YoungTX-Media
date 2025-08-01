@@ -385,7 +385,7 @@ input[type="submit"]:hover {
   backdrop-filter: blur(4px);
 }
 .hero-socials {
-  margin-top: 4rem; /* <-- Increase this to move the socials down */
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -397,11 +397,17 @@ input[type="submit"]:hover {
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
+
+  /* ✅ Animated appearance */
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 1.2s ease forwards;
   animation-delay: 2.2s;
+
+  position: relative;
+  z-index: 2;
 }
+
 
 .social-icon i,
 .hero-socials .social-icon i {
@@ -418,4 +424,15 @@ input[type="submit"]:hover {
 .hero::before,
 .hero-video {
   z-index: 1;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
