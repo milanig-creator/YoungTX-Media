@@ -315,3 +315,56 @@ input[type="submit"]:hover {
     gap: 12px;
   }
 }
+
+.about-section, .packages-section, .testimonials-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-member img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.packages-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.package-box {
+  background-color: #f8f8f8;
+  color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.package-box:hover {
+  transform: translateY(-5px);
+}
+
+.site-footer {
+  background-color: #111;
+  color: #eee;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer a {
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
