@@ -484,18 +484,21 @@ input[type="submit"]:hover {
   flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 30px;
+  padding-top: 10px;
 }
 
 .footer-logo {
-  width: 120px;
+  width: 180px;
+  max-width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(159, 207, 61, 0.4);
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 14px rgba(159, 207, 61, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .footer-logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 0 22px #b6e045cc;
 }
 
 .footer-contact {
@@ -561,4 +564,3 @@ input[type="submit"]:hover {
     width: 140px;
   }
 }
-
