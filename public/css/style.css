@@ -438,3 +438,26 @@ input[type="submit"]:hover {
     gap: 12px;
   }
 }
+
+@media (max-width: 768px) {
+  /* About Section Mobile Fix */
+  .about-split {
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 20px;
+  }
+
+  .about-person {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-person + .about-person {
+    border-top: 1px solid #ccc;
+    padding-top: 40px;
+  }
+
+  .fancy-divider {
+    display: none;
+  }
+}
