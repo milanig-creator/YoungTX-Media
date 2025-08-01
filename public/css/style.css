@@ -380,3 +380,33 @@ input[type="submit"]:hover {
     gap: 10px;
   }
 }
+
+.about-split {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.about-person {
+  max-width: 300px;
+  text-align: center;
+}
+
+.about-person img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Vertical divider */
+.divider-line {
+  width: 2px;
+  height: 180px;
+  background-color: #bbb;
+  opacity: 0.6;
+}
