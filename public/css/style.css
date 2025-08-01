@@ -481,10 +481,12 @@ input[type="submit"]:hover {
 .footer-logos {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 30px;
   padding-top: 10px;
+  text-align: center;
 }
 
 .footer-logo {
