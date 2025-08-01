@@ -319,6 +319,7 @@ input[type="submit"]:hover {
 .about-section, .packages-section, .testimonials-section {
   padding: 60px 20px;
   text-align: center;
+  background-color: #f2f2f2;
 }
 
 .team-container {
@@ -326,10 +327,13 @@ input[type="submit"]:hover {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .team-member img {
   width: 150px;
+  height: 150px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -367,4 +371,12 @@ input[type="submit"]:hover {
   margin-right: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
 }
