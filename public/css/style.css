@@ -462,107 +462,20 @@ input[type="submit"]:hover {
   }
 }
 
-.site-footer {
-  background-color: #111;
-  color: #eee;
-  padding: 30px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-  border-top: 1px solid #333;
-}
-
-.footer-logos img {
-  width: 100px;
-  height: auto;
-  margin: 5px;
-}
-
-.footer-contact h3 {
-  font-size: 1.2rem;
-  margin-bottom: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.footer-socials {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-bottom {
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
-  font-size: 0.85rem;
-  color: #aaa;
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .site-footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-logos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .footer-contact h3 {
-    margin-top: 20px;
-  }
-}
-
-.footer-contact {
-  background: rgba(0, 0, 0, 0.4);
-  border: 2px solid #9fcf3d;
-  box-shadow: 0 0 12px #9fcf3d88;
-  border-radius: 12px;
-  padding: 20px 30px;
-  max-width: 280px;
-  text-align: center;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  transition: box-shadow 0.3s ease;
-}
-
-.footer-contact:hover {
-  box-shadow: 0 0 20px #b6e045cc;
-}
-
-.footer-contact h3 {
-  color: #f2f2f2;
-  margin-bottom: 12px;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-}
-
-.social-icon i {
-  font-size: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 10px;
-  border-radius: 50%;
-  animation: pulse 2.5s infinite ease-in-out;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1); /* subtle glow */
-}
-
+/* === Footer Section === */
 .site-footer {
   background-color: #111;
   color: #eee;
   padding: 40px 20px;
   text-align: center;
   border-top: 1px solid #333;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .footer-logos {
@@ -573,7 +486,7 @@ input[type="submit"]:hover {
   margin-bottom: 30px;
 }
 
-.footer-logos img {
+.footer-logo {
   width: 120px;
   height: auto;
   border-radius: 12px;
@@ -581,18 +494,19 @@ input[type="submit"]:hover {
   transition: transform 0.3s ease;
 }
 
-.footer-logos img:hover {
+.footer-logo:hover {
   transform: scale(1.05);
 }
 
 .footer-contact {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid #9fcf3d88;
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 16px;
   max-width: 400px;
-  margin: 0 auto 20px;
   box-shadow: 0 0 15px #9fcf3d44;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .footer-contact h3 {
@@ -600,6 +514,30 @@ input[type="submit"]:hover {
   font-size: 1.5rem;
   color: #b6e045;
   text-shadow: 1px 1px #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon i {
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulse 2.5s infinite ease-in-out;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  color: #eee;
+}
+
+.social-icon:hover i {
+  transform: scale(1.2);
+  color: #9fcf3d;
+  box-shadow: 0 0 12px #9fcf3d88;
 }
 
 .footer-copy {
@@ -608,6 +546,7 @@ input[type="submit"]:hover {
   margin-top: 20px;
 }
 
+/* === Mobile Footer Adjustments === */
 @media (max-width: 768px) {
   .footer-logos {
     flex-direction: column;
@@ -618,7 +557,8 @@ input[type="submit"]:hover {
     width: 90%;
   }
 
-  .footer-logos img {
+  .footer-logo {
     width: 140px;
   }
 }
+
