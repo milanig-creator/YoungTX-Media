@@ -488,18 +488,18 @@ input[type="submit"]:hover {
 }
 
 .footer-logo {
-  width: 180px;
-  max-width: 100%;
+  width: 220px;
   height: auto;
+  max-height: none;
   border-radius: 12px;
-  box-shadow: 0 0 14px rgba(159, 207, 61, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 12px rgba(159, 207, 61, 0.4);
+  transition: transform 0.3s ease;
 }
 
 .footer-logo:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 22px #b6e045cc;
+  transform: scale(1.05);
 }
+
 
 .footer-contact {
   background: rgba(255, 255, 255, 0.05);
