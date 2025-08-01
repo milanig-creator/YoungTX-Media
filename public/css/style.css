@@ -402,3 +402,8 @@ input[type="submit"]:hover {
   animation: fadeUp 1.2s ease forwards;
   animation-delay: 2.2s;
 }
+
+.social-icon i,
+.hero-socials .social-icon i {
+  font-size: 1.6rem;
+}
