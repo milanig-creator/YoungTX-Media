@@ -407,3 +407,15 @@ input[type="submit"]:hover {
 .hero-socials .social-icon i {
   font-size: 1.6rem;
 }
+.hero-socials {
+  position: relative;
+  z-index: 2;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.hero::before,
+.hero-video {
+  z-index: 1;
+}
