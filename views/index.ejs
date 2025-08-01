@@ -32,9 +32,10 @@
   </div>
 </section>
 
-<!-- === ABOUT US SECTION (Split View) === -->
+<!-- === ABOUT US SECTION (Styled) === -->
 <section class="about-section">
-  <h2>About Us</h2>
+  <h2 class="section-title">About Us</h2>
+  
   <div class="about-split">
     <div class="about-person">
       <img src="/images/person1.jpg" alt="Partner 1">
@@ -42,7 +43,7 @@
       <p>Short bio for the first business partner.</p>
     </div>
 
-    <div class="divider-line"></div>
+    <div class="fancy-divider"></div>
 
     <div class="about-person">
       <img src="/images/person2.jpg" alt="Partner 2">
@@ -90,5 +91,30 @@
         header.classList.add('visible');
       }
     }, 1800);
+  });
+</script>
+
+<!-- Include ScrollReveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+  ScrollReveal().reveal('.about-person', {
+    origin: 'bottom',
+    distance: '40px',
+    duration: 800,
+    interval: 200,
+    easing: 'ease-out',
+    mobile: true,
+    reset: false,
+    once: true
+  });
+
+  ScrollReveal().reveal('.fancy-divider', {
+    scale: 0.85,
+    duration: 600,
+    delay: 400,
+    easing: 'ease-in-out',
+    origin: 'left',
+    distance: '20px'
   });
 </script>
