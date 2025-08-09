@@ -282,7 +282,7 @@ input[type="submit"]:hover {
 .site-footer {
   background-color: #111;
   color: #eee;
-  padding: 40px 20px;
+  padding: 15px 20px; /* smaller vertical padding */
   text-align: center;
   border-top: 1px solid #333;
 }
@@ -292,28 +292,6 @@ input[type="submit"]:hover {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-}
-
-.footer-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 30px;
-  padding-top: 10px;
-}
-
-.footer-logo {
-  width: 220px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(159, 207, 61, 0.4);
-  transition: transform 0.3s ease;
-}
-
-.footer-logo:hover {
-  transform: scale(1.05);
 }
 
 .footer-contact {
