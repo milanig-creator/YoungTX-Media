@@ -95,12 +95,6 @@
 <!-- === FOOTER SECTION === -->
 <footer class="site-footer">
   <div class="footer-content">
-    <div class="footer-logos">
-      <img src="/images/main-logo-v2.png" alt="Main Logo" class="footer-logo" />
-      <img src="/images/media-tagline.png" alt="Tagline" class="footer-logo" />
-      <img src="/images/logo-variation-2.png" alt="Variation Logo" class="footer-logo" />
-    </div>
-
     <div class="footer-contact">
       <h3>Contact Us</h3>
       <div class="footer-socials">
@@ -137,54 +131,31 @@
   });
 </script>
 
-<!-- === ScrollReveal Animations === -->
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
-  ScrollReveal().reveal('.about-person', {
-    origin: 'bottom',
-    distance: '40px',
-    duration: 800,
-    interval: 200,
-    easing: 'ease-out',
-    mobile: true,
-    reset: false,
-    once: true
-  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const sr = ScrollReveal();
 
-  ScrollReveal().reveal('.fancy-divider', {
-    scale: 0.85,
-    duration: 600,
-    delay: 400,
-    easing: 'ease-in-out',
-    origin: 'left',
-    distance: '20px'
-  });
+    sr.reveal('.footer-content, .footer-contact', {
+      origin: 'bottom',
+      distance: '40px',
+      duration: 800,
+      easing: 'ease-out',
+      opacity: 0,
+      reset: false,
+      once: true
+    });
 
-  ScrollReveal().reveal('.footer-content', {
-    origin: 'bottom',
-    distance: '50px',
-    duration: 1000,
-    easing: 'ease-in-out',
-    reset: false,
-    opacity: 0
-  });
-
-  ScrollReveal().reveal('.footer-logo', {
-    origin: 'bottom',
-    distance: '30px',
-    duration: 800,
-    interval: 150,
-    easing: 'ease-out',
-    reset: false
-  });
-
-  ScrollReveal().reveal('.footer-contact', {
-    origin: 'bottom',
-    distance: '30px',
-    duration: 1000,
-    delay: 200,
-    easing: 'ease-in-out',
-    reset: false
+    // Optional: animate social icons one-by-one
+    sr.reveal('.footer-socials a', {
+      interval: 120,
+      origin: 'bottom',
+      distance: '20px',
+      duration: 600,
+      opacity: 0,
+      once: true
+    });
   });
 </script>
+
 

@@ -238,15 +238,6 @@ nav a:hover {
 }
 .mission-section .package-box button:hover { background: #3b5230; }
 
-
-/* === 8. Testimonials Section === */
-.testimonials-section {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #f2f2f2;
-}
-
-
 /* === 9. Contact / Form === */
 form {
   max-width: 500px;
@@ -267,16 +258,15 @@ input, textarea {
 }
 
 input[type="submit"] {
-  background: #9fcf3d;
+  background: #000000;
   color: #1c220b;
   font-weight: bold;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background: #b6e045;
+  background: #000000;
 }
-
 
 /* === Footer Section (Cleaned & Finalized) === */
 .site-footer {
@@ -296,7 +286,7 @@ input[type="submit"]:hover {
 
 .footer-contact {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid #9fcf3d88;
+  border: 1px solid #00000088;
   padding: 20px 30px;
   border-radius: 16px;
   max-width: 400px;
@@ -378,7 +368,6 @@ input[type="submit"]:hover {
   position: relative;
   z-index: 2;
 }
-
 
 .social-icon i,
 .hero-socials .social-icon i {
