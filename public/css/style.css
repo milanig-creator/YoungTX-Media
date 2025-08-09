@@ -151,83 +151,93 @@ nav a:hover {
   background-color: #8cbf32;
 }
 
+/* === Mission + Packages unified section === */
 .mission-section {
-  background-color: #2d3b1f; /* Dark green */
-  padding: 60px 20px;
+  background-color: #2d3b1f;        /* dark green */
+  padding: 60px 20px 80px;
   text-align: center;
 }
 
 .mission-section .section-title {
-  font-size: 3.5rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 25px;
-  color: #fff; /* White title */
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 18px;
 }
 
 .mission-section .mission-text {
-  color: #f2f2f2; /* Light text for readability */
-  max-width: 800px;
-  margin: 0 auto 40px;
+  color: #f1f5f0;
+  max-width: 900px;
+  margin: 0 auto 36px;
+  line-height: 1.65;
   font-size: 1.1rem;
-  line-height: 1.6;
 }
 
+.mission-section .packages-title {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 10px auto 22px;
+}
+
+/* Layout for the cards */
 .mission-section .packages-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 22px;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+/* Card styling */
 .mission-section .package-box {
-  flex: 1 1 250px;
-  max-width: 300px;
-  background: #ffffff; /* White box */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  flex: 1 1 280px;
+  max-width: 340px;
+  background: #fff;                  /* <- white cards */
+  color: #222;                       /* dark text inside */
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.18);
+  transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .mission-section .package-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.25);
 }
 
-.mission-section .package-box h3 {
+.mission-section .package-box h4 {
   text-align: center;
-  color: #2d3b1f; /* Dark green headings inside boxes */
+  margin: 0 0 10px;
+  color: #2d3b1f;                    /* brand green headings */
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .mission-section .package-box ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-bottom: 15px;
-  color: #333; /* Dark text for readability */
+  list-style: disc;
+  padding-left: 18px;
+  margin: 10px 0 16px;
 }
 
-.mission-section .package-box li {
-  margin-bottom: 5px;
-  font-size: 0.95rem;
-}
+.mission-section .package-box li { margin-bottom: 6px; }
 
+/* Button */
 .mission-section .package-box button {
   display: block;
+  width: fit-content;
   margin: 0 auto;
   background: #2d3b1f;
   color: #fff;
   border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
+  padding: 8px 14px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
+.mission-section .package-box button:hover { background: #3b5230; }
 
-.mission-section .package-box button:hover {
-  background: #3e5430; /* Slightly lighter green */
-}
 
 /* === 8. Testimonials Section === */
 .testimonials-section {
