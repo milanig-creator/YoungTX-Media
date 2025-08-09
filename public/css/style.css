@@ -151,72 +151,23 @@ nav a:hover {
   background-color: #8cbf32;
 }
 
+/*mission-section*/
 
-/* === 6. About Section === */
-.about-section {
-  padding: 60px 20px;
+.mission-section {
   text-align: center;
-  background-color: #f2f2f2;
+  padding: 50px 20px;
 }
 
-.section-title {
-  font-size: 2.2rem;
-  color: #222;
-  margin-bottom: 30px;
-  position: relative;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.mission-box {
+  background-color: #1c3a2b; /* dark green */
+  color: white;
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 8px;
+  line-height: 1.6;
+  font-size: 1.2rem;
 }
-
-.section-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  margin: 12px auto 0;
-  background: #000;
-  box-shadow: none;
-  border-radius: 2px;
-}
-
-
-.about-split {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.about-person {
-  max-width: 300px;
-  text-align: center;
-}
-
-.about-person img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.fancy-divider {
-  width: 4px;
-  height: 220px;
-  background: linear-gradient(to bottom, #000, #000);
-  box-shadow: 0 0 10px #9fcf3d88;
-  border-radius: 2px;
-  opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-  .fancy-divider {
-    display: none;
-  }
-}
-
 
 /* === 7. Packages Section === */
 .packages-section {
