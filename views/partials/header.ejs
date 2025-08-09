@@ -8,6 +8,12 @@
   <!-- Add this line to load your styles -->
   <link rel="stylesheet" href="/css/style.css" />
 
+  <!-- Page-specific styles -->
+  <% if (typeof page !== 'undefined' && page === 'about') { %>
+    <link rel="stylesheet" href="/css/about.css" />
+  <% } %>
+
+
 <!-- ✅ Font Awesome via CDN -->
 <link
   rel="stylesheet"

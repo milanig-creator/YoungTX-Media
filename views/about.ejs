@@ -1,0 +1,62 @@
+<%- include('partials/header', { title: 'About • YTX Media' }) %>
+
+<main class="about">
+  <!-- HERO -->
+  <section class="about-hero">
+    <div class="about-hero__inner container">
+      <h1>Who is YTX Media?</h1>
+      <p class="about-hero__tag">
+        Everyone has a story. We’re here to tell it — with
+        creativity, intention, and impact.
+      </p>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="about-section container">
+    <h2 class="about-h2">YTX Mission</h2>
+    <p class="about-copy">
+      At YTX, we believe in the power of stories. With the YTX toolbox, creators get
+      everything they need — from content strategy and production to editing and
+      platform management. Your story deserves to be heard, and we're here to help
+      you make it unforgettable.
+    </p>
+  </section>
+
+  <!-- TEAM -->
+  <section class="about-section container">
+    <h2 class="about-h2">Meet The Team</h2>
+
+    <!-- Person 1 -->
+    <article class="team-row">
+      <div class="team-row__media">
+        <img src="/images/team/haylie.jpg" alt="Haylie Merritt headshot" loading="lazy" />
+      </div>
+      <div class="team-row__body">
+        <h3 class="team-name">Haylie Merritt</h3>
+        <p class="team-role">Founder / Head Of Content</p>
+        <p class="team-bio">
+          Haylie leads content production with an eye for strategy, seamless organization,
+          and creative execution — from collection to final edit.
+        </p>
+      </div>
+    </article>
+
+    <!-- Person 2 (reversed layout) -->
+    <article class="team-row team-row--reverse">
+      <div class="team-row__media">
+        <img src="/images/team/carley.jpg" alt="Carley Bearden headshot" loading="lazy" />
+      </div>
+      <div class="team-row__body">
+        <h3 class="team-name">Carley Bearden</h3>
+        <p class="team-role">Founder / Head Partnerships & Analytics</p>
+        <p class="team-bio">
+          Carley turns partnerships into progress. Her intuitive approach to connection
+          and strategy keeps YTX clients — and their metrics — moving forward.
+        </p>
+      </div>
+    </article>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

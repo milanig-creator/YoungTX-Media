@@ -1,0 +1,102 @@
+/* ====== Variables & Base ====== */
+:root{
+  --green-900:#0f4d37;   /* banner */
+  --green-200:#e8f1ec;   /* soft panels */
+  --text-900:#152018;
+  --text-700:#3a4a40;
+  --shadow:0 10px 30px rgba(0,0,0,.08);
+  --radius:18px;
+}
+
+.about .container{ max-width:1100px; margin-inline:auto; padding:0 24px; }
+.about h1, .about h2, .about h3{ font-weight:800; letter-spacing:.2px; color:var(--text-900); }
+
+/* ====== HERO ====== */
+.about-hero{
+  background:var(--green-900);
+  color:#fff;
+  padding:44px 0 36px;
+  box-shadow:var(--shadow);
+}
+.about-hero__inner{ text-align:center; }
+.about-hero h1{
+  text-transform:uppercase;
+  font-size:clamp(28px, 4vw, 44px);
+  margin:0 0 10px;
+}
+.about-hero__tag{
+  font-size:clamp(14px, 2.2vw, 20px);
+  line-height:1.6;
+  max-width:760px;
+  margin:0 auto;
+  font-weight:600;
+}
+
+/* ====== SECTIONS ====== */
+.about-section{
+  background:#fff;
+  margin:22px auto;
+  padding:28px 24px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+.about-h2{
+  font-size:clamp(22px, 3vw, 28px);
+  color:var(--text-900);
+  margin-bottom:12px;
+}
+.about-copy{
+  color:var(--text-700);
+  line-height:1.8;
+  font-size:18px;
+  max-width:960px;
+  text-wrap:pretty;
+}
+
+/* ====== TEAM ROWS ====== */
+.team-row{
+  display:grid;
+  grid-template-columns:140px 1fr;
+  gap:22px;
+  align-items:center;
+  padding:22px 0;
+  border-top:1px solid var(--green-200);
+}
+.team-row:first-of-type{ border-top:none; }
+
+.team-row__media{
+  width:140px; height:140px;
+  background:var(--green-200);
+  border-radius:16px;
+  display:grid; place-items:center;
+  overflow:hidden;
+}
+.team-row__media img{
+  width:100%; height:100%; object-fit:cover;
+}
+
+.team-row__body{ padding-right:10px; }
+.team-name{ font-size:26px; margin:0 0 4px; color:#0e5a3f; }
+.team-role{ font-weight:700; margin:0 0 8px; }
+.team-bio{ color:var(--text-700); line-height:1.7; }
+
+/* Reverse layout for alternating rows on desktop */
+.team-row--reverse{
+  grid-template-columns:1fr 140px;
+}
+.team-row--reverse .team-row__media{ order:2; justify-self:end; }
+.team-row--reverse .team-row__body{ order:1; padding-right:0; }
+
+/* ====== Responsive ====== */
+@media (max-width:720px){
+  .about-section{ padding:22px 18px; }
+  .team-row,
+  .team-row--reverse{
+    grid-template-columns:1fr;
+  }
+  .team-row__media,
+  .team-row--reverse .team-row__media{
+    order:1; justify-self:start; width:120px; height:120px;
+  }
+  .team-row__body{ order:2; padding-right:0; }
+}
