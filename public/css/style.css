@@ -169,6 +169,13 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
+.mission-section .section-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
 /* === 7. Packages Section === */
 .packages-section {
   padding: 60px 20px;
