@@ -205,6 +205,35 @@ nav a:hover {
   transform: translateY(-5px);
 }
 
+.package-box ul {
+  list-style-type: disc;   /* bullet style */
+  padding-left: 20px;      /* space from the box edge */
+  text-align: left;        /* align bullets left inside the box */
+  margin-bottom: 15px;     /* space before the button */
+}
+
+.package-box li {
+  margin-bottom: 5px;      /* space between items */
+  font-size: 1rem;
+}
+
+.packages-container {
+  display: flex;
+  justify-content: center;  /* centers them horizontally */
+  gap: 20px;                 /* space between boxes */
+  flex-wrap: wrap;           /* allows wrapping on smaller screens */
+}
+
+.package-box {
+  flex: 1 1 250px;            /* grow/shrink, min width 250px */
+  max-width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
 
 /* === 8. Testimonials Section === */
 .testimonials-section {
