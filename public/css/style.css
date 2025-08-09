@@ -234,6 +234,12 @@ nav a:hover {
   text-align: center;
 }
 
+.mission-section {
+  background-color: #2d3b1f; /* dark green */
+  padding: 60px 20px;
+  text-align: center;
+}
+
 
 /* === 8. Testimonials Section === */
 .testimonials-section {
