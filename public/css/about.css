@@ -77,7 +77,11 @@
 
 .team-row__body{ padding-right:10px; }
 .team-name{ font-size:26px; margin:0 0 4px; color:#0e5a3f; }
-.team-role{ font-weight:700; margin:0 0 8px; }
+.team-role{
+  font-weight:700;
+  margin:0 0 8px;
+  color: var(--text-900); /* or #0f4d37 or #000 */
+}
 .team-bio{ color:var(--text-700); line-height:1.7; }
 
 /* Reverse layout for alternating rows on desktop */

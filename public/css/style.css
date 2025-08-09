@@ -50,7 +50,19 @@ header::after {
   z-index: 1;
 }
 
+/* Make navbar fixed at top */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* stay on top of other content */
+}
 
+/* Push page content down to avoid overlap */
+body {
+  padding-top: 80px; /* adjust to match your header height */
+}
 
 /* === 3. Navigation === */
 nav {
