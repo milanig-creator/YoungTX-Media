@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YTX Media</title>
 
-  <!-- Add this line to load your styles -->
+  <title><%= title || 'YTX Media' %></title>
+
+  <!-- Global styles -->
   <link rel="stylesheet" href="/css/style.css" />
 
   <!-- Page-specific styles -->
@@ -13,34 +14,24 @@
     <link rel="stylesheet" href="/css/about.css" />
   <% } %>
 
+  <!-- ✅ Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-<!-- ✅ Font Awesome via CDN -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-
-  <!-- ✅ Font -->
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-  <!-- ✅ Your CSS -->
-  <link rel="stylesheet" href="/css/style.css" />
+  <!-- ✅ Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Young TX Media</h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/services">Services</a>
-      <a href="/gallery">Gallery</a>
-      <a href="/contact">Contact</a>
-</nav>
-
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Young TX Media</h1>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/about" <%= page==='about' ? 'aria-current="page"' : '' %>>About</a>
+        <a href="/services">Services</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
   </header>
