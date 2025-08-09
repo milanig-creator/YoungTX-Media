@@ -14,32 +14,24 @@ body {
 }
 
 
-/* === HEADER === */
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #2d3810; /* dark green */
-  padding: 1.5rem;
-  text-align: center;
-  border-bottom: 2px solid #f0f0f0;
+  background: #1c220b; /* footer color */
   z-index: 1000;
   box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
 }
 
-body {
-  padding-top: 80px; /* space for fixed header */
-}
-
+/* Brand text */
 .site-header .brand {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  letter-spacing: 2px;
   color: #fff;
   margin: 0;
+  font-size: 1.5rem;
 }
 
+/* Navigation links */
 .site-header .main-nav a {
   color: #fff;
   margin: 0 12px;
@@ -47,7 +39,7 @@ body {
 }
 
 .site-header .main-nav a:hover {
-  color: #e8f1ec;
+  color: #e8f1ec; /* light green hover */
 }
 
 /* === 3. Navigation === */
